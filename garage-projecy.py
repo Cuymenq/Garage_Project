@@ -68,11 +68,11 @@ class ParkingGarage:
 
         elif self.current_ticket == {'paid': True}:
 
-            for num in range(len(self.parking_spaces), 20):
-                self.parking_spaces.append(num)
-            for num in range(len(self.tickets), 20):
-                self.tickets.append(num)   
+
+            self.parking_spaces.append(1)
+            self.tickets.append(1)   
             print("Thank you! Have a nice day! ")
+            print(f"{len(my_garage.parking_spaces)} spots remaining.")
         
         
 
